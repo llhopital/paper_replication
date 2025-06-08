@@ -1,0 +1,263 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 174 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+[Warning: Some of the parameters have no value (mm_other, totax) when using steady. If these parameters are not initialized in a steadystate file or a steady_state_model-block,
+Dynare may not be able to solve the model...] 
+
+STEADY-STATE RESULTS:
+
+LAMBDA            		 1.1646
+LAMBDAROT         		 2.8421
+LOPT              		 1
+LROT              		 1
+COPT              		 0.805226
+CROT              		 0.4878
+PN                		 1
+S                 		 1
+PG                		 1
+W                 		 0.507982
+WN                		 0.507982
+WT                		 0.507982
+YN                		 0.483682
+KN                		 0.52613
+IN                		 0.0352507
+QN                		 1
+LNN               		 0.481643
+OMEGAN            		 0.203766
+YT                		 0.520552
+ZT                		 1
+KT                		 0.566237
+IT                		 0.0379378
+QT                		 1
+LT                		 0.518357
+OMEGAT            		 0.219298
+GI                		 0.0343448
+KG                		 0.711428
+GC                		 0.202152
+G                 		 0.236497
+Z                 		 0.21308
+TAUL              		 0.22433
+TAUC              		 0.262674
+TAX               		 0.455822
+B                 		 0.201249
+C                 		 0.694127
+INV               		 0.0731886
+DN                		 0.483682
+L                 		 1
+K                 		 1.09237
+Y                 		 1.00423
+YNON              		 1.00423
+TSUR              		 0.000421778
+CAD               		 0
+FSTAR             		 1.00423e-05
+GSHARE            		 0.2355
+GCSHARE           		 0.2013
+GISHARE           		 0.0342
+ZSHARE            		 0.212182
+BSHARE            		 0.9127
+TSURSHARE         		 0.00042
+R                 		 1.0102
+GITILDE           		 0.02988
+YNONSHARE         		 1
+TAXSHARE          		 0.4539
+NUT               		 0.88693
+TAXNON            		 0.455822
+CADSHARE          		 0
+FSTARSHARE        		 1e-05
+RKG               		 0.0751607
+EPSILON           		 0.87
+DELTAGT           		 0.042
+ASTAR             		 0
+RSTAR             		 1.0102
+BOPT              		 0.762445
+RDC               		 1.0102
+D                 		 0.912849
+DC                		 0.715316
+BSTAR             		 0.49559
+GR                		 0.00311313
+GAP               		 0
+TAUCTAR           		 0.262674
+TAULTAR           		 0.22433
+GCTAR             		 0.202152
+ZTAR              		 0.21308
+TAUCRULE          		 0.262674
+TAULRULE          		 0.22433
+GCRULE            		 0.202152
+ZRULE             		 0.21308
+RKN               		 0.270427
+RKT               		 0.270427
+MCN               		 0.8
+MCT               		 0.8
+PIEN              		 0.0001
+PIET              		 0.0001
+PIE               		 0.0001
+RN                		 0.00010102
+GISHARE_CHANGE    		 0
+ASTARSHARE_CHANGE 		 0
+GRSHARE_CHANGE    		 0
+PN_DEV            		 0
+TAUC_DEV          		 0
+TAUL_DEV          		 0
+ZSHARE_CHANGE     		 0
+GCSHARE_CHANGE    		 0
+R_NET             		 0
+INV_DEV           		 0
+C_DEV             		 0
+W_DEV             		 0
+L_DEV             		 0
+KG_DEV            		 0
+K_DEV             		 0
+Y_GROWTH          		 1.54
+YT_DEV            		 0
+YN_DEV            		 0
+DSHARE_DEV        		 0
+DCSHARE_DEV       		 0
+BSHARE_DEV        		 0
+TOTPUBDEBT_PER    		 0
+S_DEV             		 0
+FSTAR_PER         		 0.001
+DELTAGT_PER       		 2.9754
+EPSILON_PER       		 87
+YNON_DEV          		 0
+CADSHARE_PER      		 0
+GI_DEV            		 0
+Z_SHAREY          		 21.2182
+GC_SHAREY         		 20.13
+Z_DEV             		 0
+GC_DEV            		 0
+GI_GROWTH         		 0
+YNON_GROWTH       		 1.54
+PIE_RATE          		 0.01
+TOTREV            		 1.37178
+TOTEXP            		 1.37178
+PT                		 1
+PTH               		 1
+PTG               		 1
+PIETH             		 0.0001
+XX                		 0.382101
+XX_CHANGE         		 0
+taukoff           		 0.540063
+CROT_DEV          		 0
+TAXSHARE_CHANGE   		 0
+D_DEV             		 0
+DC_DEV            		 0
+B_DEV             		 0
+TAXNON_DEV        		 0
+Y_DEV             		 0
+Y_YOY             		 0
+SRP_CHANGE        		 0
+REMIT_CHANGE      		 0
+COPT_DEV          		 0
+Saving            		 0.00505501
+S_CHANGE          		 0
+GSaving           		 0.0343448
+NIIP              		 -1.41597
+T2                		 0
+MM_TOTAL          		 0.381679
+Gov_sub           		 0
+PTH_S             		 1
+EPSILONM          		 1
+YDOM              		 1.00423
+loan_sum          		 0
+OB                		 0
+tauk              		 0.714526
+varphi            		 0.356992
+nu                		 0.88693
+betaa             		 0.989903
+delta             		 0.481643
+rem               		 0.00882546
+varrho            		 0.0102
+mu                		 4.2e-07
+u                 		 0
+upsilondc         		 0.01019
+rf                		 1.00001
+rd                		 1.00001
+varthetakappa     		 0.244165
+zn                		 1
+kappaopt          		 0.458882
+kapparot          		 1.11986
+MM_K              		 0.00351482
+temp1             		 -0.47785
+ex_yy             		 0
+ex_sick           		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+        9.34e-20         9.34e-20                0
+       8.124e-18        8.124e-18                0
+       8.241e-18       -8.241e-18                0
+       6.301e-17        6.301e-17                0
+       7.228e-17        7.228e-17                0
+       8.141e-17        8.141e-17                0
+       9.716e-17        9.716e-17                0
+       6.543e-16        6.543e-16                0
+       1.467e-14       -1.467e-14                0
+       2.039e-14       -2.039e-14                0
+       1.096e-13       -1.096e-13                0
+       6.182e-13       -6.182e-13                0
+           0.478            0.478                0
+          0.9056           0.9024           0.0755
+          0.9056           0.9024          -0.0755
+          0.9085           0.9052          0.07792
+          0.9085           0.9052         -0.07792
+           0.958            0.958                0
+          0.9919           0.9919                0
+               1                1                0
+               1                1                0
+               1                1                0
+               1                1                0
+           1.112            1.108          0.09609
+           1.112            1.108         -0.09609
+           1.117            1.116          0.04338
+           1.117            1.116         -0.04338
+             1.2              1.2                0
+           1.754            1.754                0
+       4.097e+17       -4.097e+17                0
+       8.372e+17        8.372e+17                0
+       8.637e+17       -8.637e+17                0
+       1.827e+18       -1.827e+18                0
+       1.923e+18       -1.923e+18                0
+       4.014e+19       -4.014e+19                0
+        4.41e+19         4.41e+19                0
+       5.196e+27        5.196e+27                0
+       1.737e+28       -1.737e+28                0
+
+
+There are 15 eigenvalue(s) larger than 1 in modulus 
+for 15 forward-looking variable(s)
+
+The rank condition is verified.
+
+[Warning: Some of the parameters have no value (mm_other, totax) when using perfect_foresight_setup. If these parameters are not initialized in a steadystate file or a
+steady_state_model-block, Dynare may not be able to solve the model...] 
+--------------------------------------------------------
+MODEL SIMULATION :
+
+Iter: 1,	 err. = 436.8611, 	 time = 0.932
+Iter: 2,	 err. = 62.7899, 	 time = 0.755
+Iter: 3,	 err. = 8.4508, 	 time = 0.792
+Iter: 4,	 err. = 0.0088126, 	 time = 0.707
+Iter: 5,	 err. = 1.1775e-08, 	 time = 0.676
+
+Total time of simulation: 3.862
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Total computing time : 0h00m06s
+Note: warning(s) encountered in MATLAB/Octave code
