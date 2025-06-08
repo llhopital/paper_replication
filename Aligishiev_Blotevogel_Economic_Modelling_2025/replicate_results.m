@@ -1,8 +1,7 @@
-clear all
-% Use this script to replicate charts from ESM working paper "Saving for (External) Stability: 
-% The Role of the RRP/RRF and Economic Policies" (Aligishiev and Blotevogel, 2024). Based on 
-% the codes for the DIGNAR-19 toolkit (Aligishiev, Melina, Zanna, 2021).
+% Use this script to replicate charts from Aligishiev and Blotevogel (2025) "No Quick Fix: The Recovery and Resilience Plan and 
+% External Position in Greece". These codes are based on the DIGNAR-19 toolkit (Aligishiev, Melina, Zanna, 2021).
 
+clear all
 
 %Preliminary definitions
 T=26;
