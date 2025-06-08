@@ -1,4 +1,4 @@
-% Use this script to replicate charts from Aligishiev and Blotevogel (2025) "No Quick Fix: The Recovery and Resilience Plan and 
+% Use this script to replicate main results of Aligishiev and Blotevogel (2025) "No Quick Fix: The Recovery and Resilience Plan and 
 % External Position in Greece". These codes are based on the DIGNAR-19 toolkit (Aligishiev, Melina, Zanna, 2021).
 
 clear all
