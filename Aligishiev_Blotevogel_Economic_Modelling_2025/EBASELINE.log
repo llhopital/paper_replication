@@ -1,6 +1,6 @@
 Starting Dynare (version 4.5.6).
 Starting preprocessing of the model file ...
-Found 174 equation(s).
+Found 159 equation(s).
 Evaluating expressions...done
 Computing static model derivatives:
  - order 1
@@ -9,8 +9,6 @@ Computing dynamic model derivatives:
 Processing outputs ...
 done
 Preprocessing completed.
-[Warning: Some of the parameters have no value (mm_other, totax) when using steady. If these parameters are not initialized in a steadystate file or a steady_state_model-block,
-Dynare may not be able to solve the model...] 
 
 STEADY-STATE RESULTS:
 
@@ -54,8 +52,6 @@ DN                		 0.483682
 L                 		 1
 K                 		 1.09237
 Y                 		 1.00423
-YNON              		 1.00423
-TSUR              		 0.000421778
 CAD               		 0
 FSTAR             		 1.00423e-05
 GSHARE            		 0.2355
@@ -63,13 +59,10 @@ GCSHARE           		 0.2013
 GISHARE           		 0.0342
 ZSHARE            		 0.212182
 BSHARE            		 0.9127
-TSURSHARE         		 0.00042
 R                 		 1.0102
 GITILDE           		 0.02988
-YNONSHARE         		 1
 TAXSHARE          		 0.4539
 NUT               		 0.88693
-TAXNON            		 0.455822
 CADSHARE          		 0
 FSTARSHARE        		 1e-05
 RKG               		 0.0751607
@@ -126,15 +119,12 @@ S_DEV             		 0
 FSTAR_PER         		 0.001
 DELTAGT_PER       		 2.9754
 EPSILON_PER       		 87
-YNON_DEV          		 0
 CADSHARE_PER      		 0
 GI_DEV            		 0
 Z_SHAREY          		 21.2182
 GC_SHAREY         		 20.13
 Z_DEV             		 0
 GC_DEV            		 0
-GI_GROWTH         		 0
-YNON_GROWTH       		 1.54
 PIE_RATE          		 0.01
 TOTREV            		 1.37178
 TOTEXP            		 1.37178
@@ -150,23 +140,17 @@ TAXSHARE_CHANGE   		 0
 D_DEV             		 0
 DC_DEV            		 0
 B_DEV             		 0
-TAXNON_DEV        		 0
 Y_DEV             		 0
 Y_YOY             		 0
 SRP_CHANGE        		 0
 REMIT_CHANGE      		 0
 COPT_DEV          		 0
 Saving            		 0.00505501
-S_CHANGE          		 0
 GSaving           		 0.0343448
 NIIP              		 -1.41597
-T2                		 0
 MM_TOTAL          		 0.381679
 Gov_sub           		 0
-PTH_S             		 1
-EPSILONM          		 1
 YDOM              		 1.00423
-loan_sum          		 0
 OB                		 0
 tauk              		 0.714526
 varphi            		 0.356992
@@ -184,7 +168,6 @@ varthetakappa     		 0.244165
 zn                		 1
 kappaopt          		 0.458882
 kapparot          		 1.11986
-MM_K              		 0.00351482
 temp1             		 -0.47785
 ex_yy             		 0
 ex_sick           		 0
@@ -193,23 +176,20 @@ EIGENVALUES:
          Modulus             Real        Imaginary
 
                0                0                0
-               0                0                0
-               0                0                0
-               0                0                0
-               0                0                0
-               0               -0                0
-        9.34e-20         9.34e-20                0
-       8.124e-18        8.124e-18                0
-       8.241e-18       -8.241e-18                0
-       6.301e-17        6.301e-17                0
-       7.228e-17        7.228e-17                0
-       8.141e-17        8.141e-17                0
-       9.716e-17        9.716e-17                0
-       6.543e-16        6.543e-16                0
-       1.467e-14       -1.467e-14                0
-       2.039e-14       -2.039e-14                0
-       1.096e-13       -1.096e-13                0
-       6.182e-13       -6.182e-13                0
+       6.209e-18        6.209e-18                0
+        6.48e-18         6.48e-18                0
+       1.498e-17       -1.498e-17                0
+        2.37e-17         2.37e-17                0
+       2.996e-17        2.996e-17                0
+       5.658e-17        5.658e-17                0
+       5.788e-17        5.788e-17                0
+       8.525e-17        8.525e-17                0
+       9.698e-17        9.698e-17                0
+       3.317e-16        3.317e-16                0
+       1.995e-15       -1.995e-15                0
+       3.755e-15       -3.755e-15                0
+       4.397e-15        4.397e-15                0
+       2.939e-13        2.939e-13                0
            0.478            0.478                0
           0.9056           0.9024           0.0755
           0.9056           0.9024          -0.0755
@@ -220,22 +200,21 @@ EIGENVALUES:
                1                1                0
                1                1                0
                1                1                0
-               1                1                0
            1.112            1.108          0.09609
            1.112            1.108         -0.09609
            1.117            1.116          0.04338
            1.117            1.116         -0.04338
              1.2              1.2                0
            1.754            1.754                0
-       4.097e+17       -4.097e+17                0
-       8.372e+17        8.372e+17                0
-       8.637e+17       -8.637e+17                0
-       1.827e+18       -1.827e+18                0
-       1.923e+18       -1.923e+18                0
-       4.014e+19       -4.014e+19                0
-        4.41e+19         4.41e+19                0
-       5.196e+27        5.196e+27                0
-       1.737e+28       -1.737e+28                0
+       8.194e+17        8.194e+17                0
+        9.98e+17         9.98e+17                0
+       1.001e+18       -1.001e+18                0
+       6.079e+18        6.079e+18                0
+       9.224e+18       -9.224e+18                0
+       1.476e+19       -1.476e+19                0
+       9.293e+19       -9.293e+19                0
+       2.801e+28       -2.801e+28                0
+             Inf              Inf                0
 
 
 There are 15 eigenvalue(s) larger than 1 in modulus 
@@ -243,21 +222,18 @@ for 15 forward-looking variable(s)
 
 The rank condition is verified.
 
-[Warning: Some of the parameters have no value (mm_other, totax) when using perfect_foresight_setup. If these parameters are not initialized in a steadystate file or a
-steady_state_model-block, Dynare may not be able to solve the model...] 
 --------------------------------------------------------
 MODEL SIMULATION :
 
-Iter: 1,	 err. = 436.8611, 	 time = 0.932
-Iter: 2,	 err. = 62.7899, 	 time = 0.755
-Iter: 3,	 err. = 8.4508, 	 time = 0.792
-Iter: 4,	 err. = 0.0088126, 	 time = 0.707
-Iter: 5,	 err. = 1.1775e-08, 	 time = 0.676
+Iter: 1,	 err. = 436.8611, 	 time = 0.529
+Iter: 2,	 err. = 62.7899, 	 time = 0.479
+Iter: 3,	 err. = 8.4508, 	 time = 0.508
+Iter: 4,	 err. = 0.0088126, 	 time = 0.454
+Iter: 5,	 err. = 1.1775e-08, 	 time = 0.439
 
-Total time of simulation: 3.862
+Total time of simulation: 2.41
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Total computing time : 0h00m06s
-Note: warning(s) encountered in MATLAB/Octave code
+Total computing time : 0h00m04s

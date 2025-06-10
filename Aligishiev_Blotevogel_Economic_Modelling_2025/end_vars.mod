@@ -38,9 +38,8 @@
     DN                          
     L                          
     K                          
-    Y                          
-    YNON                                               
-    TSUR                        
+    Y                                                 
+    %TSUR                        
     CAD                         
     FSTAR                       
     GSHARE                      
@@ -48,13 +47,11 @@
     GISHARE                     
     ZSHARE                     
     BSHARE                      
-    TSURSHARE                  
+    %TSURSHARE                  
     R                           
-    GITILDE                                          
-    YNONSHARE                   
+    GITILDE                    
     TAXSHARE                   
-    NUT                         
-    TAXNON                     
+    NUT                                         
     CADSHARE                    
     FSTARSHARE                     
     RKG                         
@@ -110,16 +107,13 @@
     S_DEV                            
     FSTAR_PER                           
     DELTAGT_PER                         
-    EPSILON_PER                          
-    YNON_DEV                         
+    EPSILON_PER                         
     CADSHARE_PER                                                  
     GI_DEV                         
     Z_SHAREY                         
     GC_SHAREY                         
     Z_DEV                          
-    GC_DEV                               
-    GI_GROWTH                         
-    YNON_GROWTH                        
+    GC_DEV                             
     PIE_RATE                         
     TOTREV                         
     TOTEXP                         
@@ -135,25 +129,20 @@
     D_DEV
     DC_DEV
     B_DEV
-    TAXNON_DEV
     Y_DEV
     Y_YOY
     SRP_CHANGE 
     REMIT_CHANGE
     COPT_DEV
     Saving
-    S_CHANGE
+   
 GSaving
 NIIP
-T2
 MM_TOTAL
 Gov_sub
-PTH_S
-EPSILONM
 YDOM
-loan_sum
 OB
 
 %% DECLARE IMPLICIT PARAMETERS AS ENDOGENOUS VARIABLES
 tauk varphi nu betaa delta rem varrho mu u upsilondc rf rd varthetakappa
-zn kappaopt kapparot MM_K temp1
+zn kappaopt kapparot temp1

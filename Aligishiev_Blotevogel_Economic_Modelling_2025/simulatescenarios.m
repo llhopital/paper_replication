@@ -5,7 +5,6 @@ clearvars -except iiii T timescale select_varrs
 
 path_to_toolkit = pwd;
 addpath(strcat(path_to_toolkit,'\dynare\4.5.6\matlab'));
-delete output.xls
 
 disp('########################################################################################################################')
 disp('Initializing DIGNAR-19...')
@@ -152,8 +151,8 @@ if llll~=1
                         disp(['CHECK: Shocks used to align with an external baseline have been provided.']);
                     else
                         % If not
-                    fprintf(2, 'ERROR:')     
-                    disp(['Saved shocks do not correspond to the current setup. Run the realism tool (calib_baseline) again.']);
+                   % fprintf(2, 'ERROR:')     
+                  %  disp(['Saved shocks do not correspond to the current setup. Run the realism tool (calib_baseline) again.']);
                     %err_preproc = err_preproc + 1;
                     end
             

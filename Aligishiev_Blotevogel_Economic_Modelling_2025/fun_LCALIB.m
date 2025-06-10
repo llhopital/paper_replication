@@ -59,17 +59,8 @@ Y           =  (YT)/(share_yt/100);
 XX         =  (share_exp-share_gdpo)/100*Y;
 YN          =  (share_yn/100*Y);             
 GI          =  share_gi/100*Y;  
-%GIG         = 0.001*Y;
 GITILDE     =  epsilontilde*GI;   
-%GIGTILDE     = EPSILONG*GIG; 
 KG          =  (1/(deltag+ggamma))*GITILDE;
-%KGG          =  (1/(deltag+ggamma))*GIGTILDE;
-
-
-%KGG = 1;
-%GIGTILDE = KGG/(1/(deltag+ggamma));
-%GIG = GIGTILDE/EPSILONG;
-
 G           =  share_g/100*Y;                
 GC          =  G-GI;                      
 GSHARRE     =  G/Y;
@@ -97,10 +88,9 @@ mu            =   f*PG*deltag;
 %% More endogenous variables  
 KN          =  MCN*betaa*(1-alphan)*(1-tauk)*YN/((1+ggamma)-betaa*(1-deltan));
 KT          =  MCT*betaa*(1-alphat)*(1-tauk)*YT/((1+ggamma)-betaa*(1-deltat)); 
-TAXSHARE    =  ty; %
-TAX         =  TAXSHARE*Y;%
-TAXNON      =  TAX; %
-taxK        =  TAXNON - taxC*TAX - taxL*TAX; %
+TAXSHARE    =  ty; 
+TAX         =  TAXSHARE*Y;
+taxK        =  TAX - taxC*TAX - taxL*TAX; 
 FSTAR       =  share_fstar/100*Y/S;      
 C           =  share_c/100*Y;
 ASTAR       =  share_astar/100*Y/S;          
@@ -113,12 +103,6 @@ TAUC        =  taxC*TAX/((1-vartheta)*C);
 TAUL        =  taxL*TAX/((1-vartheta)*L*W);
 LAMBDA      =  1/(1+TAUC)*COPT^(-ssigma);       
 LAMBDAROT   =  1/(1+TAUC)*CROT^(-ssigma); 
-%LOPT        = ((1-TAUL)*W)^(1/psiopt);
-%LROT        = (L - omega*LOPT)/(1-omega);
-%psirot        = log((1-TAUL)*W)/log(LROT);
-%L           = omega*LOPT + (1-omega) * LROT;
-%LAMBDA      = ((COPT-kappaopt/(1+psiopt)*LOPT^(1+psiopt))^(-ssigma))/(1+TAUC);
-%LAMBDAROT   = ((CROT-kapparot/(1+psirot)*LROT^(1+psirot))^(-ssigma))/(1+TAUC);
 IN          =  KN*(ggamma+deltan);  
 IT          =  KT*(ggamma+deltat);  
 INV         =  IN + IT;     
@@ -130,19 +114,15 @@ DN          =  varphi*(C + IN + IT) + nu*G;
 zn        =  YN/(KN^(1-alphan)*KG^alphag*LNN^alphan);
 RKN         =  MCN*(1-alphan)*YN/KN;
 RKT         =  MCT*(1-alphat)*YT/KT;
-varthetakappa = 1 - taxK/(tauk*(RKN*KN+RKT*KT));  %
-taukoff     = (1-varthetakappa)*tauk;  % or the other way around  (preferrably). The steady -state ratios dictate that tauk should be huge. taukoff can be supplied to calibrate teh wedge. Same result but on paper looks more reasonable to have       
+varthetakappa = 1 - taxK/(tauk*(RKN*KN+RKT*KT));  
+taukoff     = (1-varthetakappa)*tauk;   
 R           =  (1+ggamma)^(1-ssigma)/betaa;   
-TSUR        =  (Y-C-G-INV);         
-TSURSHARE   =  TSUR/Y;
-YNON        =  Y;         
 K           =  KN+KT;       
-RKG         =  alphag*YNON/KG-deltag;
+RKG         =  alphag*Y/KG-deltag;
 QN          =  1;  
 QT          =  1;  
 FSTARSHARE  =  FSTAR*S/Y;
 CADSHARE    =  CAD/Y;
-YNONSHARE   =  YNON/Y;
 GSHARE      =  PG*G/Y;
 EPSILON     =  epsilontilde;
 DELTAGT     =  deltag;
@@ -153,18 +133,8 @@ BSHARE      =  (B+DC)/Y;
 rd          =  1+rd_net;
 Z           =  TAX + mu*(KG)+ (rstar_net-ggamma)/(1+ggamma)*FSTAR - PG*G - (R-1-ggamma)/(1+ggamma)*B - (rd-1-ggamma)/(1+ggamma)*D - (RDC-1-ggamma)/(1+ggamma)*DC  + S*ASTAR + S*GR;  
 ZSHARE      =  Z/Y;
-%rem         =  (C+INV+G - Y - S*(rstar_net-ggamma)/(1+ggamma)*FSTAR +S*(rd-1-ggamma)/(1+ggamma)*D+S*(RDC-1-ggamma)/(1+ggamma)*DC+S*(RSTAR-1-ggamma)/(1+ggamma)*BSTAR  - CAD -ASTAR - GR + (1-div)*OMEGAOSTAR)/S;
-%varphiT     = (YT - nutt*(1-nu)*G - XX)/((1-varphi) *(C + IN + IT));
 temp1          = (YT -(varphiT*(1-varphi)*(C + IN + IT) + nutt*(1-nu)*G))/XX-1;
-
 MM_TOTAL       = (C + INV + PG * G - PN * YN - PTH*YT + PTH*XX)/S;
-MM_FF         =  share_impff*Y;
-MM_K          =  share_impk*Y;
-%MM            =  MM_TOTAL - MM_FF - MM_K;
-MM             = ((MM_TOTAL^((1+rhoMM)/rhoMM) - 0.25^(-1/rhoMM)*MM_FF^((1+rhoMM)/rhoMM) - 0.0092^(-1/rhoMM)*(MM_K)^((1+rhoMM)/rhoMM))*(1-0.25-0.0092)^(1/rhoMM))^(rhoMM/(1+rhoMM)); 
-EPSILONM = 1;
-%chiM        =  MM/((1-varphiT)*(1-varphi)*(C + IN + IT)+ (1-nutt)*(1-nu)*G + MM_FF)-1;
-
 rem         = -CAD + MM + MM_FF + MM_K - ASTAR - GR  - PTH*XX + S * ( -(rstar_net-ggamma)/(1+ggamma)*FSTAR + (rd-1-ggamma)/(1+ggamma)*D + (RDC-1-ggamma)/(1+ggamma)*DC + (RSTAR-1-ggamma)/(1+ggamma)*BSTAR); 
 GAP         =  0;
 TAUCTAR     =  TAUC; 
@@ -187,18 +157,13 @@ S_CHANGE = 0;
 NIIP = -1.41*Y;
 GSaving = PG*(GI);
 OB = 0;
-T2 = 0;
-DT2 = 0;
 %% More implicit parameters
 kappaopt    =  W*(1-TAUL)*LAMBDA/(LOPT^psiopt); 
 kapparot    =  W*(1-TAUL)*LAMBDAROT/(LROT^psirot);
 rf          =  1+rf_net;
 u           =  RSTAR-RDC;
 upsilondc   =  RDC-rf;
-T2 = 0;
 Gov_sub = 0;
-% varphiT*(1-varphi) *(C + IN + IT) = (YT - nutt*(1-nu)*G - XX)
-% MM=(1-varphiT)*(1-varphi)*(C + IN + IT)+ (1-nutt)*(1-nu)*G;
 
 %% Variables to plot
 GISHARE_CHANGE = 0;
@@ -222,12 +187,11 @@ YN_DEV = 0;
 DSHARE_DEV = 0;
 DCSHARE_DEV = 0;
 BSHARE_DEV = 0;
-TOTPUBDEBT_PER = 0;%DSHARE_PER+DCSHARE_PER+BSHARE_PER;
+TOTPUBDEBT_PER = 0;
 S_DEV = 0;
 FSTAR_PER = 100*FSTARSHARE;
 DELTAGT_PER = 100*(DELTAGT*KG/Y);
 EPSILON_PER = 100*(EPSILON);
-YNON_DEV = 0;
 CADSHARE_PER = 0;
 GI_DEV = 0;
 Z_SHAREY  = 100*(Z/Y);
@@ -235,7 +199,6 @@ GC_SHAREY = 100*(GC/Y);
 Z_DEV = 0;
 GC_DEV = 0;
 GI_GROWTH = ggamma;
-YNON_GROWTH = 100*ggamma_add;
 PIE_RATE = 100*PIE;
 XX_CHANGE = 0;
 CROT_DEV = 0;
@@ -244,13 +207,11 @@ TAXSHARE_CHANGE = 0;
 D_DEV = 0;
 DC_DEV = 0;
 B_DEV = 0;
-TAXNON_DEV = 0;
 Y_DEV = 0;
 SRP_CHANGE =0;
 REMIT_CHANGE=0;
 Y_YOY=0;
 YDOM = YT+YN;
-loan_sum = 0;
 
 %% DO NOT CHANGE THIS PART
 %%
@@ -271,7 +232,6 @@ y(4)    = -LT+(1-delta)*(WT/W)^rho*L;
 y(5)    = -WT+MCT*ZT*KT^(1-alphat)*KG^alphag*alphat*LT^(alphat-1);
 y(6)    = -WN+MCN*alphan*YN/LNN;
 y(7)    = -W+(delta*WN^(1+rho)+(1-delta)*WT^(1+rho))^(1/(1+rho));
-%y(8)    = -MM+(1-varphiT)*(1-varphi)*(C + IN + IT)+ (1-nutt)*(1-nu)*G;
 %%
 
 

@@ -34,7 +34,6 @@ omega           = omega_iii/100;
 chi             = chi_iii;  
 div             = div_iii/100;      
 ty              = ty_iii/100;   
-totax           = totax_iii/100;   
 taxC            = taxC_iii/100;   
 nug             = nug_iii;   
 eta             = eta_iii;
