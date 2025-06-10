@@ -4,6 +4,6 @@ To replicate the results of "No Quick Fix: The Recovery and Resilience Plan and 
 
 2. Run the script replicate_results.m to reproduce the main quantitative results.
 
-Figures A, B, and C from the paper will be automatically saved in the ./charts subfolder. 
+Figures 4, 5, 6, 7, 8 and all figures in the appendices of the paper will be automatically generated abd saved in the ./charts subfolder. 
 
 Requirements: MATLAB must be installed. The package includes Dynare 4.5.6.  

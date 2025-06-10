@@ -334,40 +334,6 @@ t = 0:1:0+horizon-1;
 old_debt = 100.*(L./L(1)-1);
 old_growth = 100.*(Y./Y(1)-1);
 
-figure(1)
-    
-subplot(1,2,1)
-    pdebt=plot(1:T,old_debt(1:T),1:T,ad_hoc_debt1(1:T));
-    ylabel('%');
-    xlabel('Year');
-    set( gca, 'XTick', 0:0+T-1);
-    title({'Employment','(rel. to balanced growth path)'});
-    axis tight
-    pdebt(1).LineStyle = '-';
-    pdebt(1).LineWidth = 2;
-    pdebt(1).Color = 'g';
-    pdebt(2).LineStyle = '-';
-    pdebt(2).LineWidth = 2;
-    pdebt(2).Color = 'k';
-    legend('Model baseline','User-provided baseline')
-    legend('Location','southoutside')
-
-subplot(1,2,2)
-    pdebt=plot(1:T,old_growth(1:T),1:T,ad_hoc_gdp1(1:T));
-    ylabel('%');
-    xlabel('Year');
-    set( gca, 'XTick', 0:0+T-1);
-    title({'Real GDP','(rel. to balanced growth path)'});
-    axis tight
-    pdebt(1).LineStyle = '-';
-    pdebt(1).LineWidth = 2;
-    pdebt(1).Color = 'g';
-    pdebt(2).LineStyle = '-';
-    pdebt(2).LineWidth = 2;
-    pdebt(2).Color = 'k';
-    legend('Model baseline','User-provided baseline')
-    legend('Location','southoutside')
-
     
 disp(' ')
 disp(' ') 
@@ -400,7 +366,7 @@ disp(' ')
 %       tax_adj = plot_tfp2.*(oo_.steady_state(35).*C(1:end-1) + oo_.steady_state(34).*W(1:end-1).*L(1:end-1))./Y(1:end-1);
         
 
-        figure(2)
+        f1 = figure(Name="Shocks to match Malliaropulos et al. (2021)");
         subplot(2,2,1)
         pdebt=plot(1:T-1,old_debt(1:T-1),1:T-1,ad_hoc_debt1(1:T-1),1:T-1,100.*(L(1:T-1)/L(1)-1));
         ylabel('%');
