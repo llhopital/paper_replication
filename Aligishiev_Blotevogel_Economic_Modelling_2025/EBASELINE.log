@@ -225,13 +225,13 @@ The rank condition is verified.
 --------------------------------------------------------
 MODEL SIMULATION :
 
-Iter: 1,	 err. = 436.8611, 	 time = 0.493
-Iter: 2,	 err. = 62.7899, 	 time = 0.49
-Iter: 3,	 err. = 8.4508, 	 time = 0.48
-Iter: 4,	 err. = 0.0088126, 	 time = 0.443
-Iter: 5,	 err. = 1.1776e-08, 	 time = 0.459
+Iter: 1,	 err. = 436.8611, 	 time = 0.536
+Iter: 2,	 err. = 62.7899, 	 time = 0.487
+Iter: 3,	 err. = 8.4508, 	 time = 0.467
+Iter: 4,	 err. = 0.0088126, 	 time = 0.47
+Iter: 5,	 err. = 1.1776e-08, 	 time = 0.423
 
-Total time of simulation: 2.366
+Total time of simulation: 2.383
 --------------------------------------------------------
 
 Perfect foresight solution found.
