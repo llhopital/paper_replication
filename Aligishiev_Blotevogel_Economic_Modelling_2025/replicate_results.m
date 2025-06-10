@@ -54,7 +54,7 @@ end
 
 %% 5. Produce remaining figures
 % Figures 5, 7, 8, and all remaining figures from the paper's appendices
-print_fig578appb;
+print_fig578appE;
 print_other_app;
 
 

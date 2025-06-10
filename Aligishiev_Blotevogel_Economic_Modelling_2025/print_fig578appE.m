@@ -38,8 +38,8 @@ if ~exist(fullfile('charts', 'fig5'), 'dir')
     mkdir(fullfile('charts', 'fig5'));
 end
 
-if ~exist(fullfile('charts', 'app_b'), 'dir')
-    mkdir(fullfile('charts', 'app_b'));
+if ~exist(fullfile('charts', 'app_e'), 'dir')
+    mkdir(fullfile('charts', 'app_e'));
 end
 
 if ~exist(fullfile('charts', 'fig8'), 'dir')
@@ -234,7 +234,7 @@ saveas(gcf,'charts/fig5/all_vars.jpg')
 %% 3. Plot appendix B
 
 % 3.1 Part 1
-f8 = figure('Name','Appendix B (Figure 1)');
+f8 = figure('Name','All variables (Figure E1.1)');
 subplot(5,3,1)
 p = plot(timescale',100.*(YDOM(1:T,:)./YDOM(1,:)-1));
     title('Output')
@@ -495,10 +495,10 @@ p = plot(timescale',100.*(COPT(1:T,:)./COPT(1,:)-1));
     'Orientation', 'horizontal', 'Units', 'normalized', 'Position',...
     [0.35, 0.02, 0.3, 0.05]); 
 
-saveas(gcf,'charts/app_b/all_vars_1.jpg')
+saveas(gcf,'charts/app_e/all_vars_1.jpg')
 
 % 3.2 Part 2
-f9 = figure('Name','Appendix B (Figure 2)');
+f9 = figure('Name','All variables (Figure E1.2)');
 subplot(5,3,1)
 p = plot(timescale',100.*(CROT(1:T,:)./CROT(1,:)-1));
     title('RoT Consumption')
@@ -758,10 +758,10 @@ p = plot(timescale',100.*(MM_TOTAL(1:T,:)./MM_TOTAL(1,:)-1));
         'Orientation', 'horizontal', 'Units', 'normalized', 'Position',...
         [0.35, 0.02, 0.3, 0.05]); 
 
-saveas(gcf,'charts/app_b/all_vars_2.jpg')
+saveas(gcf,'charts/app_e/all_vars_2.jpg')
 
 % 3.3 Part 3
-f10 = figure('Name','Appendix B (Figure 3)');
+f10 = figure('Name','All variables (Figure E1.3)');
 subplot(5,3,1)
 p = plot(timescale',100.*(TAUC(1:T,:)-TAUC(1,:)));
     title('Consumption tax rate')
@@ -886,7 +886,7 @@ p = plot(timescale',100.*(PG(1:T,:)./PG(1,:)-1));
         'Orientation', 'horizontal', 'Units', 'normalized',...
         'Position', [0.35, 0.35, 0.3, 0.05]); 
 
-saveas(gcf,'charts/app_b/all_vars_3.jpg')
+saveas(gcf,'charts/app_e/all_vars_3.jpg')
 
 %% 4. Plot alternative scenarios
 
@@ -908,8 +908,8 @@ f11 = figure('Name','Alternative scenarios - fiscal balance (Figure 8a)');
 saveas(gcf,'charts/fig8/PBY.jpg')
 
     
-f12 = figure('Name',['Alternative scenarios - external public debt' ...
-    ' (Figure 8b)']);
+f12 = figure('Name',['Alternative scenarios - external private debt' ...
+    ' (Figure 8c)']);
     p3 = plot(timescale(1:2,:)',FPD_y);
     ylabel('percentage points of GDP')
     xlabel('year')
@@ -925,8 +925,8 @@ f12 = figure('Name',['Alternative scenarios - external public debt' ...
 saveas(gcf,'charts/fig8/EPDY.jpg')
 
     
- f13 = figure('Name',['Alternative scenarios - external private debt' ...
-     ' (Figure 8c)']);
+ f13 = figure('Name',['Alternative scenarios - external public debt' ...
+     ' (Figure 8b)']);
     p3 = plot(timescale(1:2,:)',DFD_y);
     ylabel('percentage points of GDP')
     xlabel('year')

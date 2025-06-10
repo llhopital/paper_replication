@@ -159,7 +159,7 @@ p3 = plot(timescale', CAD_y);
 saveas(gcf,'charts/app_d/figd4/CADY.jpg')
 
 f24 = figure('Name',['Alternative fiscal rules - slippage NIIP' ...
-    '         (Figure D-3.d)']);
+    '         (Figure D-4.d)']);
 p3 = plot(timescale',NIIP_y);
     ylabel('percentage points of GDP')
     xlabel('year')
@@ -177,7 +177,7 @@ p3 = plot(timescale',NIIP_y);
 saveas(gcf,'charts/app_d/figd4/NIIPY.jpg')
 
 f25 = figure('Name',['Alternative fiscal rules - slippage public' ...
-    '     savings (Figure D-3.b)']);
+    '     savings (Figure D-4.b)']);
 p3 = plot(timescale',Pub_save_y);
     ylabel('percentage points of GDP')
     xlabel('year')
@@ -195,7 +195,7 @@ p3 = plot(timescale',Pub_save_y);
 saveas(gcf,'charts/app_d/figd4/GSY.jpg')
 
 f26 = figure('Name',['Alternative fiscal rules - slippage private' ...
-    '     savings (Figure D-3.a)']);
+    '     savings (Figure D-4.a)']);
 p3 = plot(timescale', Priv_save_y);
     ylabel('percentage points of GDP')
     xlabel('year')

@@ -298,15 +298,6 @@ end;
 %--------------------------------------------------------------------------
 shocks;
 
-%var timeline;
-%periods 1:999;
-%values (time_line);
-
-
-%var eps_po;
-%periods 1:999;
-%values (rsrc_prce_dev);
-
 var eps_inv;
 periods 1:999;
 values (xxx1);
@@ -314,26 +305,6 @@ values (xxx1);
 var eps_yo;
 periods 1:999;
 values (xxx2);
-
-%var eps_conc;
-%periods 1:999;
-%values (conc_debt_dev);
-
-%var eps_grts;
-%periods 1:999;
-%values (frgn_grts_dev);
-
-%var dummy_F;
-%periods 1:999;
-%values (dummy_periods);
-
-%var dummy_T;
-%periods 1:999;
-%values (efficiency_parameter_dev);
-
-%var ex_z;
-%periods 1:999;
-%values (ex_transfers_dev);
 
 var ex_sick;
 periods 1:1000;
@@ -343,36 +314,9 @@ var ex_xx;
 periods 1:999;
 values (ex_exports_dev);
 
-%var ex_rem;
-%periods 1:999;
-%values (ex_remit_dev);
-
-%var ex_risk_inter;
-%periods 1:999;
-%values (ex_rprem_dev);
-
-%var ex_gc;
-%periods 1 2 3 4 5;
-%periods 1:999;
-%values (gov_cons_dev);
-
-%var ex_taul;
-%periods 1:999;
-%values (labour_tax_imposed);
-
-%%var ex_tauc;
-%periods 1:999;
-%values (consumption_tax_imposed);
-
 var ex_yy;
 periods 1:1000;
 values (tfp_shock);
-%periods 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
-%values 0 0 0 0 0 0 0 0.08 0.09 0.1 0.11 0.12 0.13 0.14 0.15 0.16;
-
-%var vartheta;
-%periods 1:1000;
-%values (tfp_shock2);
 
 
 end;

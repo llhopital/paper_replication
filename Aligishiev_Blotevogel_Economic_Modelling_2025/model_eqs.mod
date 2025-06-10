@@ -16,9 +16,7 @@ taukoff         = STEADY_STATE(taukoff);
 kappaopt        = STEADY_STATE(kappaopt); 
 kapparot        = STEADY_STATE(kapparot);
 temp1           = STEADY_STATE(temp1);
-
 varthetakappa   = STEADY_STATE(varthetakappa);
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 2. Model equations
@@ -46,7 +44,7 @@ L = (( delta^(-1/rho) * LNN^((rho+1)/rho) + (1-delta)^(-1/rho)
 LAMBDA * (1+TAUC) = (COPT)^(-ssigma);
 
 [name='OPT: Marginal disutility of labour']
-exp(rhoMM*ex_sick)*kappaopt * LOPT^(psiopt) = (1-TAUL) * W * LAMBDA;
+exp(lab_switch*ex_sick)*kappaopt * LOPT^(psiopt) = (1-TAUL) * W * LAMBDA;
 
 [name='OPT: Euler equation'] 
 LAMBDA = betaa*LAMBDA(+1)*R/(1+ggamma);
@@ -61,7 +59,7 @@ RSTAR = RDC + u;
 (1+TAUC)*CROT = (1-TAUL)*W*LROT + S*rem +Z -mu*(KG(-1));
 
 [name='ROT: Marginal disutility of labour'] 
-exp(ex_sick)*kapparot * LROT^(psirot) = (1-TAUL) * W * LAMBDAROT;
+exp(lab_switch*ex_sick)*kapparot * LROT^(psirot) = (1-TAUL) * W * LAMBDAROT;
 
 [name='ROT: Marginal sutility of consumption'] 
 LAMBDAROT * (1+TAUC) = (CROT)^(-ssigma);
@@ -71,7 +69,7 @@ LAMBDAROT * (1+TAUC) = (CROT)^(-ssigma);
 % 2.2.1 Non-traded sector %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 [name='NT: Production function']    
-YN = exp(EPSILONG*ex_yy)*zn * KN(-1)^(1-alphan) * LNN^alphan * KG(-1)^alphag;
+YN = exp(tfp_switch*ex_yy)*zn * KN(-1)^(1-alphan) * LNN^alphan * KG(-1)^alphag;
 
 [name='NT: TFP']   
 zn = STEADY_STATE(zn);
@@ -110,7 +108,7 @@ tauk/STEADY_STATE(tauk) = exp(-0.5*(KG(-1)-STEADY_STATE(KG)));
 % 2.2.2 Traded sector %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
           
 [name='T: Production function']   
-YT = exp(EPSILONG*ex_yy)*ZT * KT(-1)^(1-alphat) * KG(-1)^alphag * LT^alphat;
+YT = exp(tfp_switch*ex_yy)*ZT * KT(-1)^(1-alphat) * KG(-1)^alphag * LT^alphat;
 
 [name='T: TFP']   
 ZT = STEADY_STATE(ZT);

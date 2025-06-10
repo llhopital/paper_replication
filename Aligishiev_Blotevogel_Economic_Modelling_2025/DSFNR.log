@@ -223,15 +223,15 @@ The rank condition is verified.
 --------------------------------------------------------
 MODEL SIMULATION :
 
-Iter: 1,	 err. = 545.3748, 	 time = 0.534
-Iter: 2,	 err. = 70.4549, 	 time = 0.525
-Iter: 3,	 err. = 1.0828, 	 time = 0.526
-Iter: 4,	 err. = 0.00018285, 	 time = 0.506
-Iter: 5,	 err. = 5.2176e-12, 	 time = 0.521
+Iter: 1,	 err. = 545.3748, 	 time = 0.559
+Iter: 2,	 err. = 70.4549, 	 time = 0.635
+Iter: 3,	 err. = 1.0828, 	 time = 0.612
+Iter: 4,	 err. = 0.00018285, 	 time = 0.587
+Iter: 5,	 err. = 8.5613e-12, 	 time = 0.521
 
-Total time of simulation: 2.613
+Total time of simulation: 2.915
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Total computing time : 0h00m04s
+Total computing time : 0h00m05s

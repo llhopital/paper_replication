@@ -14,7 +14,7 @@ disp(' ')
 disp('Importing inputs...')
 
 %% Import parameter values (for baseline calibration) from Excel spreadsheet (Do not touch the following lines)
-[ndata, text, alldata] = xlsread('inputs.xlsx',1,'C8:Q103');
+[ndata, text, alldata] = xlsread('inputs.xlsx',1,'C9:Q92');
 param_names  = char(text);
 param_values = ndata(:,iiii);
 [mmm,nnn] = size(ndata(:,iiii));
